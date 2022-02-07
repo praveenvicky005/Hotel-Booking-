@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Detial></details></title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            #logo{
-                height: 60px;
-                width: 60px;
-            }
-            #content img{
-                height: 500px;
-                width: 500px;
-            }
-           
-        </style>
+    <title>
+        <Detial>
+            </details>
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #logo {
+            height: 60px;
+            width: 60px;
+        }
+
+        #content img {
+            height: 500px;
+            width: 500px;
+            margin: 2% 4% 0% 4%;
+        }
+    </style>
 </head>
+
 <body>
-        <!-- header logo and login button -->
+    <!-- header logo and login button -->
     <header>
-       <a href="index.html" target="_self"> <img src="assests\images\logo.png" id="logo" alt ="logo" height="200" width="150"/></a>
+        <a href="index.html" target="_self"> <img src="assests\images\logo.png" id="logo" alt="logo" height="200"
+                width="150" /></a>
         <a href="login.html" target="_blank">login</a>
     </header>
-        <!-- content div contains the detials of the hotel and payment gateway -->
+    <!-- content div contains the detials of the hotel and payment gateway -->
     <div id="content">
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-        alt="Radisson Blu Hotel"  ><br>
-        <form action="payment.html" method="get" target="_self">
-            <label for="members">Adults:</label>
-            <input type="number" name="members" id="members" min="1"><br>
-            <label for="name">Name:</label>
-            <input type="text" required><br>
-            <label for="From_Date ">From Date</label>
-            <input type="date" name="From_Date" id="From_Date" required><br>
-            <label for="To_Date">To Date</label>
-            <input type="date" name="To_Date" id="To_Date" required><br>
-            <label for="Total">Total:</label>
-            <input type="number" name="Total" id="Total" disabled><br>
-            <input type="submit" name="Book now" value="Book now">
-        </form>
-        <h3>Radisson Blu Hotel</h3>
-        <p>RATING</p>
-        <P>5 STAR</P>
-        <P>AMENITIES</P>
-        <ul>
-            <li>Room Service</li>
-            <li>Restaurant</li>
-            <li>Business center</li>
-            <li>Fitness center</li>
-            <li>Pool</li>
-        </ul>
-        <h5>DESCRIPTION</h5>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-             consequuntur explicabo facilis. Voluptas magnam eligendi aperiam sapiente doloribus, nihil fugit culpa ab cumque
-             porro tenetur consectetur libero nemo illum maxime?</P>
+            alt="Radisson Blu Hotel"><br>
+        <div id="paymentform">
+            <form action="payment.html" method="get" target="_self">
+                <label for="members">Adults:</label>
+                <input type="number" name="members" id="members" min="1"><br>
+                <label for="name">Name:</label>
+                <input type="text" required><br>
+                <label for="From_Date ">From Date</label>
+                <input type="date" name="From_Date" id="From_Date" required><br>
+                <label for="To_Date">To Date</label>
+                <input type="date" name="To_Date" id="To_Date" required><br>
+                <label for="Total">Total:</label>
+                <input type="number" name="Total" id="Total" disabled><br>
+                <input type="submit" name="Book now" value="Book now">
+            </form>
+        </div>
+        <div id="description">
+            <h3>Radisson Blu Hotel</h3>
+            <p>RATING</p>
+            <P>5 STAR</P>
+            <P>AMENITIES</P>
+            <ul>
+                <li>Room Service</li>
+                <li>Restaurant</li>
+                <li>Business center</li>
+                < li>Fitness center</li>
+                    <li>Pool</li>
+            </ul>
+            <h5>DESCRIPTION</h5>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                consequuntur explicabo facilis. Voluptas magnam eligendi aperiam sapiente doloribus, nihil fugit culpa
+                ab cumque
+                porro tenetur consectetur libero nemo illum maxime?</P>
+        </div>
     </div>
     <footer>
-          <!-- social media link -->
-          <a href="contact.html" target="_blank">Contact Us</a><br>
-          <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20" width="22"/></a>
-          <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20" width="22"/></a>
-          <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20" width="22"/></a><br>
-          <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
+        <!-- social media link -->
+        <a href="contact.html" target="_blank">Contact Us</a><br>
+        <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook"
+                height="20" width="22" /></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"
+                height="20" width="22" /></a>
+        <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20"
+                width="22" /></a><br>
+        <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
     </footer>
 </body>
+
 </html>

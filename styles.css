@@ -1,6 +1,9 @@
+    /* commom styles for all html files start */
 body{
     height: 100%;
     width: 100%;
+    background-color: #e0e0e0;
+    margin: 0%;
 }
 
 
@@ -12,3 +15,33 @@ footer img {
     height: 20px;
     width: 22px;
 }
+header{
+    background-color:rosybrown ;
+    background-size: cover;
+    
+}
+footer{
+    background-color: rosybrown;
+}
+ /* commom styles for all html files end */
+
+/* detail.html styles start*/
+#paymentform{
+    margin: 0% 4% 1%;
+}
+#description{
+    margin: 1% 4% 2%;
+}
+/* detail.html styles end  */
+
+    /* payment.html styles start */
+    #coustmerdetail{
+        margin: 2%;
+    }
+    #traifdetail{
+        margin: 2%;
+        border: solid 1px;
+        border-radius: 5px;
+        padding: 1% 2%;
+    }
+     /* payment.html styles end */
