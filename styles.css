@@ -1,47 +1,70 @@
     /* commom styles for all html files start */
-body{
-    height: 100%;
-    width: 100%;
-    background-color: #e0e0e0;
-    margin: 0%;
-}
-
-
-#logo{
-    height: 60px;
-    width: 60px;
-}
-footer img {
-    height: 20px;
-    width: 22px;
-}
-header{
-    background-color:rosybrown ;
-    background-size: cover;
+    body{
+        height: 100%;
+        width: 100%;
+        background-color: #e0e0e0;
+        margin: 0%;
+        font-family: Ubuntu ;
+        overflow: scroll;
+    }
     
-}
-footer{
-    background-color: rosybrown;
-}
- /* commom styles for all html files end */
-
-/* detail.html styles start*/
-#paymentform{
-    margin: 0% 4% 1%;
-}
-#description{
-    margin: 1% 4% 2%;
-}
-/* detail.html styles end  */
-
-    /* payment.html styles start */
-    #coustmerdetail{
-        margin: 2%;
+    
+    #logo{
+        height: 60px;
+        width: 60px;
     }
-    #traifdetail{
-        margin: 2%;
-        border: solid 1px;
-        border-radius: 5px;
-        padding: 1% 2%;
+    #login,#contact,#veiwmore{
+        text-decoration: none;
+        color: black;
+     }
+    footer img {
+        height: 20px;
+        width: 22px;
     }
-     /* payment.html styles end */
+    header{
+        width: 100%;
+        background-color:rosybrown ;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content:space-between;
+        align-content: center;
+        align-items: center;
+        
+        
+    }
+    footer{
+        height: 7%;
+        width: 100%;
+        bottom: 0;
+        background-color: rosybrown;
+        position: fixed;
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: center;
+    }
+     /* commom styles for all html files end */
+    
+    /* detail.html styles start*/
+    #paymentform{
+        margin: 0% 4% 1%;
+    }
+    #description{
+        margin: 1% 4% 2%;
+    }
+    /* detail.html styles end  */
+    
+        /* payment.html styles start */
+        #coustmerdetail{
+            margin: 1% 2%;
+        }
+        #traifdetail{
+           z-index: relative;
+            margin:2%;
+            border: solid 1px;
+            border-radius: 5px;
+            padding: 1% 2%;
+        }
+         /* payment.html styles end */

@@ -7,20 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style>
         .img {
             height: 150px;
             width: 150px;
         }
+        #login,#contact,#veiwmore{
+           text-decoration: none;
+           color: black;
+        }
 
         #seachbar {
-            height: 380px;
-            /* background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) ;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover; */
+            height: 380px;  
             background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) no-repeat center;
             background-size: cover;
+            display: block;
+            
+        }
+        input{
+            padding: 10px;
+            font-size: 16px;
+            margin: 0 auto;
+            background-color:  #f1f1f1;
+            border: 1px solid white;
+            border-radius: 12px;
+           
         }
 
         article {
@@ -32,6 +44,17 @@
             padding: 4%;
             border-radius: 25%;
         }
+        #City{
+            padding: 10px;
+            font-size: 16px;
+            width: 35%;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid white;
+            background-color:  #f1f1f1;
+            border-radius: 12px;
+
+        }
     </style>
 </head>
 
@@ -40,13 +63,15 @@
     <header>
         <!-- logo of the site and login tab -->
         <img src="assests\images\logo.png" alt="logo" id="logo" />
-        <a href="login.html" target="_self">login</a>
+        <a href="login.html" target="_self" id="login">login</a>
     </header>
-    <section>
+    <section style="overflow: scroll;">
         <!-- search bar of the page -->
-        <form id="seachbar" action="">
-            <input type="text" name="City" id="City" placeholder="City">
-        </form>
+        <div id="seachbar" >
+            <form  action="" style="display:block;margin:0 auto; padding:10%;"  >
+                <input type="text" name="City" id="City" placeholder="City" >
+            </form>
+        </div>
         <!-- the image contenet of the site which is city images -->
         <article>
             <a href="list.html" target="_self"> <img
@@ -58,17 +83,24 @@
                 alt="Charminar" height="300" width="300" />
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="img"
                 alt="Kolkata" height="300" width="300" /><br />
-            <a href="#index.html" target="_self">View more>></a><br />
+                <a href="#index.html" id="veiwmore" target="_self" style="display: block;text-align: center;" >View more>></a>
         </article>
     </section>
     <footer>
         <!-- footer div which cointains the social meadia link -->
-        <a href="contact.html" target="_self">Contact us</a><br>
-        <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" /></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"
-                alt="instagram" /></a>
-        <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" /></a><br>
-        <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
+        <section>
+            <a href="contact.html" id="contact" target="_self">Contact us</a>
+        </section>
+        
+        <section style="margin-top: 2%; font-size: 10px;">
+            <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
+        </section>
+        <section>
+            <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" /></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"
+                    alt="instagram" /></a>
+            <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" /></a><br>
+        </section>
     </footer>
 
 </body>
