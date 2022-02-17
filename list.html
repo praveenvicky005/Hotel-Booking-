@@ -12,7 +12,7 @@
             height: 200px;
             width: 250px;
         }
-        #detail{
+        /* #detail{
            
             margin: 0% 2%;
             display: grid;
@@ -40,17 +40,50 @@
         #hotel-3{
             grid-column: 1/4;
             grid-row: 2/3;
+        } */
+        #detail{
+            margin-left: 2%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50% 50%;
+            row-gap: 3%;
+            grid-template-rows: 50% 50%;
+            width: 100%;
+            align-items: center;
+            justify-content:start;
         }
+        #hotel-1{
+       grid-column: 1/3;
+       grid-row: 1/2;
+   
+
+        }
+        #hotel-2{
+           grid-column:2/5;
+           grid-row: 1/2;
+           
+        }
+        #hotel-3{
+            grid-column: 1/3;
+            grid-row: 2/3;
+        } 
         article{
-            background-color: rgb(132,136,139);
+            background-color: rgba(132,136,139,0.2);
+            width:40%;
+            height: 200px;
+            margin: 2%;
+        
+        }
+        #mapview{
+            height:400px ;
             width: 400px;
         }
       
-        div{
-            margin-top:5%;
-            margin: 5% auto;
+        .listview{
+            margin:6% 0 2%;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
             
            
         }
@@ -70,75 +103,82 @@
 </head>
 <body>
         <!-- header div -->
-    <header>
-        <a href="index.html" target="_self">  <img src="assests\images\logo.png" id="logo" alt ="logo" height="200" width="150"/></a>
-        <a href="login.html" target="_blank">login</a>
-    </header>
+        <header>
+        
+            <div id="header-div">
+                 <a href="index.html" target="_self"> <img src="assests\images\logo.png" id="logo" alt="logo"  /></a>
+            
+                 <a href="login.html" target="_blank">login</a>
+             </div>
+     </header>
+       
         <!-- content div  contains details of the hotel-->
-        <div>
+        <div id="list-vew-container" style="display: flex; align-items: center; justify-content: center;">
             <a href="#list-view" target="_self" class="listview">List View</a>
+          
+            
             <a href="#map-view" target="_self" class="listview">Map View</a>
+      
         </div>
-        <section id outerdetail style="width:80%;  overflow-x: hidden;">
-                 <section id="detail">
-                <!-- <div>
-                    <ul>
-                        <div class="listview">
-                            <li><a href="#list-view" target="_self">List View</a></li>
-                        </div>
-                        <div class="listview">
-                            <li><a href="#map-view" target="_self" style="display: inline;">Map View</a></li>
-                        </div>
-                    </ul> -->
-                
-                        
+        <section id="detail">
                     <!-- detial of Radisson Blu Hotel -->
-                <article id="hotel-1">
+                <article id="hotel-1" style="width:30%;">
                     <a href="detail.html" target="_self"><img class="hotelimage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                     alt="Radisson Blu Hotel" id="list-view" ></a>
+                    <div style="display: inline; float: right; margin-right: 10%;">
                     <a href="detail.html" target="_self"><h3>Radisson Blu Hotel</h3></a>
                     <a href="detail.html" target="_slef"><p>5 star</p></a>
                     <a href="detail.html" target="_self"><p>New Delhi</p></a>
+                </div>
                 </article>
+               
                     <!-- detial of hote The Lalit New Delhi -->
-                    <article  id="hotel-2">
+                    <article  id="hotel-2" style="width:30%;">
                         <img class="hotelimage" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" 
                         alt="The Lalit New Delhi">
-                        <h3>The Lalit New Delhi</h3>
-                        <p>4.5 star</p>
-                        <p>New Delhi</p>
+                        <div style="display: inline; float: right; margin-right: 10%;">
+                            <h3>The Lalit New Delhi</h3>
+                            <p>4.5 star</p>
+                            <p>New Delhi</p>    
+                        </div>
                     </article>
+                    <br>
                     <!-- detail of Taj Palace  -->
-                <article id="hotel-3">
+                <article id="hotel-3" style="width:30%;">
                     <img class="hotelimage" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" 
                     alt="Taj Palace">
-                    <h3>Taj Palace</h3>
-                    <p>4 star</p>
-                    <p>New Delhi</p>
+                    <div style="display: inline; float: right; margin-right: 10%;">
+                        <h3>Taj Palace</h3>
+                        <p>4 star</p>
+                        <p>New Delhi</p>
+                    </div>
                 </article>
+                
                     <!-- image of map view -->
-                <div id="mapview" style="visibility:hidden">
+                <div id="mapview" style="display: none;">
                     <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" id="map-view" alt="Map Image" >
                     <p>Map View</p>
                 </div>
                  </section>
-            </section>
+         
         <!-- footer div -->
-        <footer>
+        <footer >
             <!-- footer div which cointains the social meadia link -->
-            <section>
-                <a href="contact.html" id="contact" target="_self">Contact us</a>
-            </section>
-            
-            <section style="margin-top: 2%; font-size: 10px;">
-                <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
-            </section>
-            <section>
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" /></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"
-                        alt="instagram" /></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" /></a><br>
-            </section>
+            <div id="footer-div">
+                <section>
+                    <a href="contact.html" id="contact" target="_self">Contact us</a>
+                </section>
+                
+                <section >
+                    <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
+                </section>
+                <section id="social-meadia">
+                    <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" /></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"
+                            alt="instagram" /></a>
+                    <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" /></a><br>
+                </section>  
+             </div>
         </footer>
     
 </body>

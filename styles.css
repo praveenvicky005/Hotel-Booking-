@@ -4,7 +4,7 @@
         width: 100%;
         background-color: #e0e0e0;
         margin: 0%;
-        font-family: Ubuntu ;
+        font-family: Ubuntu,sans-serif;
         overflow: scroll;
     }
     
@@ -17,33 +17,46 @@
         text-decoration: none;
         color: black;
      }
-    footer img {
-        height: 20px;
-        width: 22px;
-    }
+     a{
+         text-decoration: none;
+         color: black;
+     }
+   
     header{
+        height: 70px;
         width: 100%;
-        background-color:rosybrown ;
-        background-size: cover;
-        position: fixed;
-        top: 0;
-        display: flex;
-        justify-content:space-between;
-        align-content: center;
-        align-items: center;
-        
-        
-    }
-    footer{
-        height: 7%;
-        width: 100%;
-        bottom: 0;
         background-color: rosybrown;
+        top: 0;
         position: fixed;
+       
+    }
+
+    #header-div{
         display: flex;
-        
         justify-content: space-between;
         align-items: center;
+        margin: 0 2%;
+    }
+  
+    
+    footer{
+        bottom:0;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        background-color: rosybrown;
+       
+    }
+    #footer-div{
+        height: 70px;
+        margin: 0 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #social-meadia img{
+        height: 20px;
+        width: 22px;
     }
      /* commom styles for all html files end */
     
@@ -57,14 +70,10 @@
     /* detail.html styles end  */
     
         /* payment.html styles start */
-        #coustmerdetail{
-            margin: 1% 2%;
-        }
         #traifdetail{
            z-index: relative;
             margin:2%;
-            border: solid 1px;
-            border-radius: 5px;
+           
             padding: 1% 2%;
         }
          /* payment.html styles end */
