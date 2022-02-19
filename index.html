@@ -20,8 +20,9 @@
            color: black;
         }
 
-        #seachbar {
+        #searchbar {
             height: 380px;  
+            width: 100%;
             background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) no-repeat center;
             background-size: cover;
             display: block;
@@ -47,11 +48,11 @@
             border-radius: 12px;
 
         }
-        #article-section{
+        /* #article-section{
             margin-top: 2%;
             display: flex;
             justify-content: space-around;
-        }
+        } */
         .img{
             border-radius: 25%;
             box-shadow: 10px 10px 10px grey;;
@@ -93,28 +94,40 @@
 
     <body style="background-color:#e0e0e0">
     
-    <header>
+    <header class=" continer">
         
         <div id="header-div">
+          <div class="col-lg-1">
              <a href="index.html" target="_self"> <img src="assests\images\logo.png" id="logo" alt="logo"  /></a>
-        
+        </div>
+        <div class="col-lg-1">
              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Log in
             </button>
          </div>
  </header>
             
-
-    <section >
+ <div id="searchbar">
+    <section  class="row"  >
         <!-- search bar of the page -->
-        <div id="seachbar" >
-            <form  action="" style="display:block;margin:0 auto; padding:10%;"  >
-                <input type="text" name="City" id="City" placeholder="City" >
-            </form>
+        <!-- <div class="container " id="container"> -->
+          
+        <div   class="column-lg-12">
+            <div>
+              <form  action="" style="display:block;margin:0 auto; padding:10%;"   >
+                  <input type="text" name="City" id="City" placeholder="City" >
+              </form>
+            </div>
         </div>
+    </section>
+  </div>
         <!-- the image contenet of the site which is city images -->
-        <section  >
-            <article id="article-section" >
+        <div class="container">
+        <div class="container">
+        <section class="container" >
+          
+            <article id="article-section" class="row  " >
+              <article class="col-lg-3 col-md-6">
                 <div id="one"  class="image-container" >
                     
                         <a href="list.html" target="_self"> <img
@@ -123,22 +136,29 @@
                    
                         <div class="title-div"><a href="list.html" target="_self" class="city-name">Delhi</a></div>
                 </div>
-                <div id="two" class="image-container">
+              </article>
+              <article class="col-lg-3 col-md-6">
+                <div id="two" class="image-container" >
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" id="img2"  class="img" alt="Goa"
                         height="300" width="300" />
                         <div class="title-div">Goa</div>
-                </div>
-                <div id="three" class="image-container">
+                      </article>
+                <article class="col-lg-3 col-md-6">
+                <div id="three" class="image-container" >
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"  id="img3" class="img"
                         alt="Charminar" height="300" width="300" />
                         <div class="title-div">Charminar</div>
-                </div>
-                <div id="four" class="image-container">
+                      </article>
+              <article class="col-lg-3 col-md-6">
+                <div id="four" class="image-container" >
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" id="img4"  class="img"
                         alt="Kolkata" height="300" width="300" />
                         <div class="title-div">Calcutta</div>
                 </div>
-            </article>
+              </article>
+          </article>
+        </div>
+      </div>
             <br>
             <br>
             <div>
