@@ -11,6 +11,7 @@
     </title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,92 +50,116 @@
             font-family: cursive;
         }
       
-        #content img{
-    max-height: 350px;
-    width: 25em;
-    margin-top: 6%;
-} 
-#hotel1{
-    margin: 0 2% 5% 2%;
-    display: flex; 
-    justify-content: center;
-     border:1px solid black ; 
-     margin-bottom:5%; 
-     height: 500px;
-}
-#card{
-    width:60%; 
-    height: 500PX; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    margin-right: 10%;
-}
-.form{
-    display: flex;
-    align-items: center;
-}
+        #detail-container{
+            height: 450px;
+            margin: 2%;
+            border: 1PX solid black;
+           
+        }
+        #hotel-img{
+        max-height: 350px;
+        width: 25em;
+   
+        } 
+        #hotel-detail{
+           
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
 
-.label{
-    display: flex;
-    grid-column-gap: 5em;
-    grid-row-gap: 5em;
-    margin: 0em 3em 2.3em 3em;
 
-}
+        #hotel1{
+            margin: 0 2% 5% 2%;
+            display: flex; 
+            justify-content: center;
+            border:1px solid black ; 
+            margin-bottom:5%; 
+            height: 500px;
+        }
+    .form{
+        display: flex;
+        align-items: center;
+    }
 
-.label input{
-    width: 18em;
-    margin-left: 3.5em;
-    
-}
-.adultField .nameField .totalField{
-    padding-right: 2em;
-}
-.label label{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
+        .label{
+            display: flex;
+            grid-column-gap: 5em;
+            grid-row-gap: 5em;
+            margin: 0em 3em 2.3em 3em;
 
-.form button{
-    margin-left: 18em;
-    padding: 0.5em;
-}
+        }
 
-.info{
-    margin: 2em;
-}
-.info h5{
-    font-family: cursive;
-}
-.checked{
-    color: orange;
-}
+        .label input{
+            width: 18em;
+            margin-left: 3.5em;
+            
+        }
+        .adultField .nameField .totalField{
+            padding-right: 2em;
+        }
+        .label label{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+
+        .form button{
+            margin-left: 18em;
+            padding: 0.5em;
+        }
+
+        .info{
+            margin: 2em;
+        }
+        .info h5{
+            font-family: cursive;
+        }
+        .input{
+            height: 25px;
+            border: 1px solid white;
+            border-radius: 2px;
+        }
+        .checked {
+           color: orange;
+        }
+        .halffull{
+          color: orange;
+        }
+        #mail{
+            display: inline;
+            height: 2%;
+            width: 400px ;
+            padding: 10px;
+            font-size: 16px;
+            margin: 0 auto;
+            background-color:  #f1f1f1;
+            border: 1px solid white;
+            border-radius: 12px; 
+        }
     </style>
 </head>
 
-<body style="background-color:#e0e0e0">
-    <!-- header logo and login button -->
+<body style="background-color: #e0e0e0; height: 100%; width: 100%;">
     <header>
         
-        <div id="header-div">
+        <div id="header-div" >
              <a href="index.html" target="_self"> <img src="assests\images\logo.png" id="logo" alt="logo"  /></a>
-        
-             <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        </div>
+        <div style="margin-right: 2%;" >
+             <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                 Log in
               </button>
          </div>
-    </header>
-    <br><br><br><br><br><br><br>
+ </header>
+    <br><br><br>
 
     <!-- content div contains the detials of the hotel and payment gateway -->
     <!-- Content Div -->
-    <div id="content">
-        <div id="hotel1" class="hotelDetail" >
-
-        <div id="card" >
+    <section id="detail-container">
+        <section id="hotel-detail">
+            <div id="hotel-img" >
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
@@ -147,53 +172,56 @@
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block w-100" alt="poolside">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" style="background-color: rosybrown; height: 55px; width: 55px;">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" style="background-color: rosybrown; height: 55px; width: 55px; margin-top: 25%;">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" style="background-color: rosybrown; height: 55px; width: 55px;">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" style="background-color: rosybrown; height: 55px; width: 55px;margin-top: 25%;">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+            </div>
         </div>
-
-        <div class="form" style="height: 500PX; border-left: 1PX solid black;">
-        <form>
-            <div class="label">
-                <label for="adults">Adults:</label>
-            <input type="number"  name="adults"  min="1" required class="adultField">
+        
+            <div id="form" style="border-left:1px solid black; height: 450px;">
+                <form style="margin-top: 10%">
+                    <div class="label">
+                        <label for="adults">Adults:</label>
+                    <input type="number"  class="input" name="adults"  min="1" required >
+                    </div>
+            
+                    <div class="label">
+                        <label for="name">Name:</label>
+                    <input type="text"  class="input" name="name" required >
+                    </div>
+        
+                    <div class="label">
+                        <label for="from_date">From Date:</label>
+                    <input type="date" class="input" name="fromdate" required style="margin-left: 1em;">
+                    </div>
+        
+                    <div class="label">
+                        <label for="to_date">To Date:</label>
+                    <input type="date" name="todate" required style="margin-left: 2.3em;">
+                    </div>
+        
+                    <div class="label">
+                        <label for="total">Total:</label>
+                    <input type="text"  class="input"id="total" name="total" readonly >
+                    </div>
+                    <div >
+                        <button type="submit" formaction="payment.html" class="btn btn-outline-success" style="margin-left:50%;margin-bottom: 1%;" >Book Now</button> <br>
+                    </div>      
+                </form>
             </div>
-    
-            <div class="label">
-                <label for="name">Name:</label>
-            <input type="text"  name="name" required class="nameField">
-            </div>
-
-            <div class="label">
-                <label for="from_date">From Date:</label>
-            <input type="date" name="fromdate" required style="margin-left: 1em;">
-            </div>
-
-            <div class="label">
-                <label for="to_date">To Date:</label>
-            <input type="date" name="todate" required style="margin-left: 2.3em;">
-            </div>
-
-            <div class="label">
-                <label for="total">Total:</label>
-            <input type="text" id="total" name="total" readonly class="totalField">
-            </div>
-
-            <button type="submit" formaction="payment.html" class="btn btn-outline-success" style="height: 3%;width: 20%;">Book Now</button>  
-        </form>
-        </div>
-    </div>
+        </section>
+    </section>
 
             <div class="info">
                 <h1><p>Radisson Blu Hotel</p></h1>
                 <h5><p>RATING</p></h5>
-                <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+                <a href="detail.html" target="_slef"><p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p></a>
                 <h5><p>AMENITIES</p></h5>
                 <ul>
                     <li>Room service</li>
@@ -210,11 +238,12 @@
         <footer >
             <!-- footer div which cointains the social meadia link -->
             <div id="footer-div">
-                <section>
+                <section >
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#model-two">
                         Contact Us
-                    </button>
+                      </button>
                 </section>
+                
                 <section >
                     <span>&copy; 2020 ROOM SEARCH PVT.LTD</span>
                 </section>
@@ -226,59 +255,63 @@
                 </section>  
              </div>
         </footer>
-        <!-- Modal  for contact us-->
-<!-- Modal -->
-<div class="modal fade" id="model-two" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <p>Thank you for reaching out!!! <br>Please enter your email and we will get back to you.</p>
-            <form >
-                <label for="mail">Email:</label>
-                <input type="email" name="mail" id="mail">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">submit</button>
+
+      <!-- Modal  for contact us-->
+      <!-- Modal -->
+      <div class="modal fade" id="model-two" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for reaching out!!! <br>Please enter your email and we will get back to you.</p>
+                <form >
+                    <label for="mail">Email:</label>
+                    <input type="email" name="mail" id="mail">
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">submit</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-   <!-- modal for login -->
-       <!-- Modal -->
       
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">please login</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- modal for login -->
+          <!-- Modal -->
+          
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">please login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email: </label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" required>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Password: </label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" required autocomplete="off">
+                      </div>
+                    </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary" style="margin-left: 45%;">Sign in</button>
+                  </form>
+            </div>
+          
+          </div>
         </div>
-        <div class="modal-body">
-            <form>
-                <div class="row mb-3">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email: </label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password: </label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" required autocomplete="off">
-                  </div>
-                </div>
-                </fieldset>
-                <button type="submit" class="btn btn-primary" style="margin-left: 45%;">Sign in</button>
-              </form>
-        </div>
-       
       </div>
-    </div>
-  </div>
+
 
 </body>
 

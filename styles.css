@@ -28,6 +28,9 @@
         background-color: rosybrown;
         top: 0;
         position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
        
     }
 
@@ -38,6 +41,7 @@
         margin: 0 2%;
     }
   
+    
     
     footer{
         bottom:0;
