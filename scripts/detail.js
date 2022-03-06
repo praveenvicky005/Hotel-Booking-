@@ -21,3 +21,11 @@ let displayTotalPrice = () => {
         elementPrice.value = "Rs.0";
     }
 };
+
+// to fetch details from api
+let fetchHotelDetailAPI = () => {
+        if(h=this.readyState === this.DONE){
+            let result = JSON.parse(this.responseText).data;
+            document.getElementById("hotel-name").innerText = result.name;
+        }
+}
